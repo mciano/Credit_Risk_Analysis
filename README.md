@@ -3,7 +3,7 @@ The objective at hand is to use machine learning to predict credit card risk. We
 accuracy using the credit card credit dataset from LendingClub, a peer-to-peer lending services company, to see 
 which one best forecasts low and high-risk loan applications.
 
-Each loan has about 85 features (aka variables) in the dataset. A couple of examples are Principal and Interest 
+Each loan has about 85 features in the dataset. A couple of examples are Principal and Interest 
 Received to Date, Most Recent Payment Amount, Interest Rate, Debt-to-Income Ratio, Months Since recent Credit Inquiry, and Home Ownership.
 
 The issue with this dataset is that it has a significant bias in favour of good loans. Because most loans never default,
