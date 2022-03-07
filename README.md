@@ -28,13 +28,13 @@ Let's take a look at six different machine learning models that can predict a hi
 
 - Random oversampling randomly selects instances of minority classes and adds them to the training set until the majority and minority classes are balanced.
 
-- Expected to be 0.64 for high-risk use, which is actually correct.
+- Accuracy: Expected to be 0.64 for high-risk use, which is actually correct.
 
 ![](/Resources/1_Randrom_Oversampling.png)
 
-- Accuracy: A high-risk application of 0.01 is predicted and is actually correct. 
+**Precision:** A high-risk application of 0.01 is predicted and is actually correct. 
 
-Recall: 0.61 of the actual high-risk application was correctly identified. 
+**Recall:** 0.61 of the actual high-risk application was correctly identified. 
 
 ![](/Resources/2_imbalanced_classification_report.png)
 
@@ -42,9 +42,13 @@ Recall: 0.61 of the actual high-risk application was correctly identified.
 
 - The synthetic Minority Oversampling (SMOTE) technique increases the size of minorities by interpolating new instances. That is, some nearest neighbours are selected for an instance of the minority class. 
 
-- Accuracy: Expected to be 0.01 for high-risk use, which is actually correct. 
+- Accuracy: Expected to be 0.62 for high-risk use, which is actually correct. 
 
-Recall: The actual high-risk application 0.61 was correctly identified.
+![](/Resources/Smote_Score.png)
+
+**Precision:** A high-risk application of 0.01 is predicted and is actually correct.
+
+**Recall:** 0.61 of the actual high-risk application was correctly identified. 
 
 ![](/Resources/3_Smote_oversampling.png)
 
@@ -52,10 +56,15 @@ Recall: The actual high-risk application 0.61 was correctly identified.
 
 - Cluster Centroids identify majority class clusters and generate synthetic data points called centroids that represent the clusters. The majority class is then subsampled to the size of the minority class. 
 
-- Accuracy: 0.51 for high-risk applications was predicted and was actually correct. 
+- Accuracy: 0.52 for high-risk applications was predicted and was actually correct. 
 
 ![](/Resources/4_Cluster_Undersampling.png)
 
+**Precision:** A high-risk application of 0.01 is predicted and is actually correct.
+
+**Recall:** 0.61 of the actual high-risk application was correctly identified. 
+
+![](/Resources/4_Cluster_Report.png)
 ### SMOTEENN Combination Sampling
 
 - The SMOTEENN is a combination of the SMOTE algorithm and the Edited Nearest  Neighbors (ENN) algorithm. SMOTEENN is a two-step process. 
