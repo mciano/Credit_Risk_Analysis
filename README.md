@@ -28,7 +28,7 @@ Let's take a look at six different machine learning models that can predict a hi
 
 - Random oversampling randomly selects instances of minority classes and adds them to the training set until the majority and minority classes are balanced.
 
-- Accuracy: Expected to be 0.64 for high-risk use, which is actually correct.
+- Accuracy: Expected to be 0.645 for high-risk use, which is actually correct.
 
 ![](/Resources/1_Random_score.png)
 
@@ -42,7 +42,7 @@ Let's take a look at six different machine learning models that can predict a hi
 
 - The synthetic Minority Oversampling (SMOTE) technique increases the size of minorities by interpolating new instances. That is, some nearest neighbours are selected for an instance of the minority class. 
 
-- Accuracy: Expected to be 0.62 for high-risk use, which is actually correct. 
+- Accuracy: Expected to be 0.623 for high-risk use, which is actually correct. 
 
 ![](/Resources/2_Smote_score.png)
 
@@ -56,7 +56,7 @@ Let's take a look at six different machine learning models that can predict a hi
 
 - Cluster Centroids identify majority class clusters and generate synthetic data points called centroids that represent the clusters. The majority class is then subsampled to the size of the minority class. 
 
-- Accuracy: 0.52 for high-risk applications was predicted and was actually correct. 
+- Accuracy: 0.529 for high-risk applications was predicted and was actually correct. 
 
 ![](/Resources/3_Cluster_score.png)
 
@@ -88,7 +88,7 @@ Let's take a look at six different machine learning models that can predict a hi
 
 - The random forest algorithm will sample the data and build several smaller, simpler decision trees. Each tree is simpler because it is built from a random subset of features.
 
-- Accuracy: 0.78 of high risk applications were predicted and actually correct.
+- Accuracy: 0.788 of high risk applications were predicted and actually correct.
 
 ![](/Resources/5_Balanced_score.png)
 
@@ -102,7 +102,7 @@ Let's take a look at six different machine learning models that can predict a hi
 
 - Easy Ensemble selects all examples from the minority class and a subset from the majority class to create a balanced sample of the training set. Instead of using a pruned decision tree, a boosted decision tree is used for each subset, especially the AdaBoost algorithm.  
 
-- Accuracy: 0.78 for high-risk use is expected and is actually correct.
+- Accuracy: 0.788 for high-risk use is expected and is actually correct.
 
 ![](/Resources/6_Easy_score.png)
 
