@@ -30,3 +30,13 @@ Let's take a look at six different machine learning models that can predict a hi
 
 ![](/Resources/1_Randrom_Oversampling.png)
 
+-Accuracy: A high-risk application of 0.01 is predicted and is actually correct. 
+
+Recall: 0.70 of the actual high-risk application was correctly identified. 
+
+![](/Resources/2_imbalanced_classification_report.png)
+
+### SMOTE Oversampling
+
+- 
+
