@@ -58,13 +58,14 @@ Let's take a look at six different machine learning models that can predict a hi
 
 - Accuracy: 0.52 for high-risk applications was predicted and was actually correct. 
 
-![](/Resources/4_Cluster_Undersampling.png)
+![](/Resources/4_Cluster_Score.png)
 
 **Precision:** A high-risk application of 0.01 is predicted and is actually correct.
 
 **Recall:** 0.61 of the actual high-risk application was correctly identified. 
 
 ![](/Resources/4_Cluster_Report.png)
+
 ### SMOTEENN Combination Sampling
 
 - The SMOTEENN is a combination of the SMOTE algorithm and the Edited Nearest  Neighbors (ENN) algorithm. SMOTEENN is a two-step process. 
@@ -77,9 +78,9 @@ Let's take a look at six different machine learning models that can predict a hi
 
 ![](/Resources/5_Smoteenn_sampling.png)
 
-- Accuracy: A high-risk application of 0.01 is predicted and is actually correct.
+**Precision:** A high-risk application of 0.01 is predicted and is actually correct.
 
-Recall: 0.70 of the actual high-risk application was correctly identified.
+**Recall:** 0.70 of the actual high-risk application was correctly identified. 
 
 ![](/Resources/6_Smoteenn_classification.png)
 
@@ -89,11 +90,11 @@ Recall: 0.70 of the actual high-risk application was correctly identified.
 
 - Accuracy: 0.78 of high risk applications were predicted and actually correct.
 
-![](/Resources/7_Balanced_Random_Forest.png)
+![](/Resources/7_Balanced_score.png)
 
-- Precision: 0.03 of high risk applications were predicted and actually correct.
+**Precision:** A high-risk application of 0.03 is predicted and is actually correct.
 
-Recall: 0.70 of actual high risk applications identified correctly.
+**Recall:** 0.70 of the actual high-risk application was correctly identified. 
 
 ![](/Resources/8_Balanced_Report.png)
 
@@ -105,7 +106,22 @@ Recall: 0.70 of actual high risk applications identified correctly.
 
 ![](/Resources/9_Easy_Acuracy_Score.png)
 
+**Precision:** A high-risk application of 0.03 is predicted and is actually correct.
 
+**Recall:** 0.70 of the actual high-risk application was correctly identified.
+
+![](/Resources/10_Easy_Report.png)
+
+
+## Summary
+
+It is interesting to find out that some of the above machine learning models outperform others. Given that, further study is needed to identify machine learning models that are more successful at making predictions.
+
+However, considering the multiple methods listed above, the Easy Ensemble model is recommended, because each of its scores reveals that it is most likely to identify and anticipate high-risk loan applications effectively.
+
+It's important to highlight that, as shown in the Classification Reports, its F1 score of 0.16 is much higher than the other models. The F1 score is a weighted average of the true positive rate (recall) and precision, with 1.0 being the highest and 0.0 being the worst.
+
+There is usually a trade-off between sensitivity and accuracy, and you need to strike a balance between them. A convenient way to think about  F1 scores is that if there is a significant imbalance between sensitivity and accuracy, the F1 score will be low. While 0.16 is low, it is up to 8 times more than other models. Therefore, from the above options, the most preferable is to anticipate high-risk loan applications.
 
 
 
