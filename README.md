@@ -46,6 +46,39 @@ Recall: The actual high-risk application 0.63 was correctly identified.
 
 ![](/Resources/3_Smote_oversampling.png)
 
+### Cluster Centroids Undersampling
+
+- Cluster Centroids identify majority class clusters and generate synthetic data points called centroids that represent the clusters. The majority class is then subsampled to the size of the minority class. 
+
+- Accuracy: 0.545 for high-risk applications was predicted and was actually correct. 
+
+![](/Resources/4_Cluster_Undersampling.png)
+
+### SMOTEENN Combination Sampling
+
+- The SMOTEENN is a combination of the SMOTE algorithm and the Edited Nearest  Neighbors (ENN) algorithm. SMOTEENN is a two-step process. 
+
+*1.* Oversample  minority classes using SMOTE.
+
+*2.* Use an undersampling strategy to clean up the resulting data. If the two nearest neighbors of a data point belong to two different classes, the data point will be deleted. 
+
+- Accuracy: Expected high risk use of 0.545, actually correct.
+
+![](/Resources/5_Smoteenn_sampling.png)
+
+- Accuracy: A high-risk application of 0.01 is predicted and is actually correct.
+
+Recall: 0.72 of the actual high-risk application was correctly identified.
+
+![](/Resources/6_Smoteenn_classification.png)
+
+### Random Forest Classifier
+
+- The random forest algorithm will sample the data and build several smaller, simpler decision trees. Each tree is simpler because it is built from a random subset of features.
+
+- Accuracy: 0.78 of high risk applications were predicted and actually correct.
+
+![](/Resources/7_Balanced_Random_Forest.png)
 
 
 
