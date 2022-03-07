@@ -30,7 +30,7 @@ Let's take a look at six different machine learning models that can predict a hi
 
 ![](/Resources/1_Randrom_Oversampling.png)
 
--Accuracy: A high-risk application of 0.01 is predicted and is actually correct. 
+- Accuracy: A high-risk application of 0.01 is predicted and is actually correct. 
 
 Recall: 0.70 of the actual high-risk application was correctly identified. 
 
@@ -38,5 +38,16 @@ Recall: 0.70 of the actual high-risk application was correctly identified.
 
 ### SMOTE Oversampling
 
-- 
+- The synthetic Minority Oversampling (SMOTE) technique increases the size of minorities by interpolating new instances. That is, some nearest neighbours are selected for an instance of the minority class. 
+
+- Accuracy: Expected to be 0.66 for high-risk use, which is actually correct. 
+
+Recall: The actual high-risk application 0.63 was correctly identified.
+
+![](/Resources/3_Smote_oversampling.png)
+
+
+
+
+
 
