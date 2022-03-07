@@ -49,7 +49,7 @@ Let's take a look at six different machine learning models that can predict a hi
 **Precision:** A high-risk application of 0.01 is predicted and is actually correct.
 
 **Recall:** 0.61 of the actual high-risk application was correctly identified. 
-
+ 
 ![](/Resources/3_Smote_report.png)
 
 ### Cluster Centroids Undersampling
