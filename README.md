@@ -30,13 +30,13 @@ Let's take a look at six different machine learning models that can predict a hi
 
 - Accuracy: Expected to be 0.64 for high-risk use, which is actually correct.
 
-![](/Resources/1_Randrom_Oversampling.png)
+![](/Resources/1_Random_score.png)
 
 **Precision:** A high-risk application of 0.01 is predicted and is actually correct. 
 
 **Recall:** 0.61 of the actual high-risk application was correctly identified. 
 
-![](/Resources/2_imbalanced_classification_report.png)
+![](/Resources/2_Random_report.png)
 
 ### SMOTE Oversampling
 
@@ -44,13 +44,13 @@ Let's take a look at six different machine learning models that can predict a hi
 
 - Accuracy: Expected to be 0.62 for high-risk use, which is actually correct. 
 
-![](/Resources/Smote_Score.png)
+![](/Resources/Smote_score.png)
 
 **Precision:** A high-risk application of 0.01 is predicted and is actually correct.
 
 **Recall:** 0.61 of the actual high-risk application was correctly identified. 
 
-![](/Resources/3_Smote_oversampling.png)
+![](/Resources/3_Smote_report.png)
 
 ### Cluster Centroids Undersampling
 
@@ -58,13 +58,13 @@ Let's take a look at six different machine learning models that can predict a hi
 
 - Accuracy: 0.52 for high-risk applications was predicted and was actually correct. 
 
-![](/Resources/4_Cluster_Score.png)
+![](/Resources/4_Cluster_score.png)
 
 **Precision:** A high-risk application of 0.01 is predicted and is actually correct.
 
 **Recall:** 0.61 of the actual high-risk application was correctly identified. 
 
-![](/Resources/4_Cluster_Report.png)
+![](/Resources/4_Cluster_report.png)
 
 ### SMOTEENN Combination Sampling
 
@@ -76,13 +76,13 @@ Let's take a look at six different machine learning models that can predict a hi
 
 - Accuracy: Expected high risk use of 0.639, actually correct.
 
-![](/Resources/5_Smoteenn_sampling.png)
+![](/Resources/5_Smoteenn_report.png)
 
 **Precision:** A high-risk application of 0.01 is predicted and is actually correct.
 
 **Recall:** 0.70 of the actual high-risk application was correctly identified. 
 
-![](/Resources/6_Smoteenn_classification.png)
+![](/Resources/6_Smoteenn_score.png)
 
 ### Random Forest Classifier
 
@@ -96,7 +96,7 @@ Let's take a look at six different machine learning models that can predict a hi
 
 **Recall:** 0.70 of the actual high-risk application was correctly identified. 
 
-![](/Resources/8_Balanced_Report.png)
+![](/Resources/8_Balanced_report.png)
 
 ### Easy Ensemble Classifier
 
@@ -104,13 +104,13 @@ Let's take a look at six different machine learning models that can predict a hi
 
 - Accuracy: 0.78 for high-risk use is expected and is actually correct.
 
-![](/Resources/9_Easy_Acuracy_Score.png)
+![](/Resources/9_Easy_score.png)
 
 **Precision:** A high-risk application of 0.03 is predicted and is actually correct.
 
 **Recall:** 0.70 of the actual high-risk application was correctly identified.
 
-![](/Resources/10_Easy_Report.png)
+![](/Resources/10_Easy_report.png)
 
 
 ## Summary
