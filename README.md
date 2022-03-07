@@ -15,7 +15,9 @@ The testing data is then used to train models and make predictions.
 The following criteria are used to assess the model's performance:
 
 - Accuracy Score - This is just the percentage of right predictions, with 1 being 100% accurate and 0 being 0% accurate.
+
 - Precision Score - a metric for how reliable a positive classification is, with 1 being 100% and 0 being 0%. As an example, "I'm aware that the high-risk test was positive. How  likely is it that the loan will be high-risk?"
+
 - Recall Score - a measure of how many actual positives were accurately detected, with 1 being 100% correct and 0 being 0% correct. "I'm well aware that my loan is a high-risk investment. How likely is  that the test will be able to predict it?"
 
 ## Results
@@ -26,13 +28,13 @@ Let's take a look at six different machine learning models that can predict a hi
 
 - Random oversampling randomly selects instances of minority classes and adds them to the training set until the majority and minority classes are balanced.
 
-- Expected to be 0.67 for high-risk use, which is actually correct.
+- Expected to be 0.64 for high-risk use, which is actually correct.
 
 ![](/Resources/1_Randrom_Oversampling.png)
 
 - Accuracy: A high-risk application of 0.01 is predicted and is actually correct. 
 
-Recall: 0.70 of the actual high-risk application was correctly identified. 
+Recall: 0.61 of the actual high-risk application was correctly identified. 
 
 ![](/Resources/2_imbalanced_classification_report.png)
 
@@ -40,9 +42,9 @@ Recall: 0.70 of the actual high-risk application was correctly identified.
 
 - The synthetic Minority Oversampling (SMOTE) technique increases the size of minorities by interpolating new instances. That is, some nearest neighbours are selected for an instance of the minority class. 
 
-- Accuracy: Expected to be 0.66 for high-risk use, which is actually correct. 
+- Accuracy: Expected to be 0.01 for high-risk use, which is actually correct. 
 
-Recall: The actual high-risk application 0.63 was correctly identified.
+Recall: The actual high-risk application 0.61 was correctly identified.
 
 ![](/Resources/3_Smote_oversampling.png)
 
@@ -50,7 +52,7 @@ Recall: The actual high-risk application 0.63 was correctly identified.
 
 - Cluster Centroids identify majority class clusters and generate synthetic data points called centroids that represent the clusters. The majority class is then subsampled to the size of the minority class. 
 
-- Accuracy: 0.545 for high-risk applications was predicted and was actually correct. 
+- Accuracy: 0.51 for high-risk applications was predicted and was actually correct. 
 
 ![](/Resources/4_Cluster_Undersampling.png)
 
@@ -62,13 +64,13 @@ Recall: The actual high-risk application 0.63 was correctly identified.
 
 *2.* Use an undersampling strategy to clean up the resulting data. If the two nearest neighbors of a data point belong to two different classes, the data point will be deleted. 
 
-- Accuracy: Expected high risk use of 0.545, actually correct.
+- Accuracy: Expected high risk use of 0.639, actually correct.
 
 ![](/Resources/5_Smoteenn_sampling.png)
 
 - Accuracy: A high-risk application of 0.01 is predicted and is actually correct.
 
-Recall: 0.72 of the actual high-risk application was correctly identified.
+Recall: 0.70 of the actual high-risk application was correctly identified.
 
 ![](/Resources/6_Smoteenn_classification.png)
 
@@ -79,6 +81,23 @@ Recall: 0.72 of the actual high-risk application was correctly identified.
 - Accuracy: 0.78 of high risk applications were predicted and actually correct.
 
 ![](/Resources/7_Balanced_Random_Forest.png)
+
+- Precision: 0.03 of high risk applications were predicted and actually correct.
+
+Recall: 0.70 of actual high risk applications identified correctly.
+
+![](/Resources/8_Balanced_Report.png)
+
+### Easy Ensemble Classifier
+
+- Easy Ensemble selects all examples from the minority class and a subset from the majority class to create a balanced sample of the training set. Instead of using a pruned decision tree, a boosted decision tree is used for each subset, especially the AdaBoost algorithm.  
+
+- Accuracy: 0.78 for high-risk use is expected and is actually correct.
+
+![](/Resources/9_Easy_Acuracy_Score.png)
+
+
+
 
 
 
