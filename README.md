@@ -36,7 +36,7 @@ Let's take a look at six different machine learning models that can predict a hi
 
 **Recall:** 0.61 of the actual high-risk application was correctly identified. 
 
-![](/Resources/2_Random_report.png)
+![](/Resources/1_Random_report.png)
 
 ### SMOTE Oversampling
 
@@ -44,13 +44,13 @@ Let's take a look at six different machine learning models that can predict a hi
 
 - Accuracy: Expected to be 0.62 for high-risk use, which is actually correct. 
 
-![](/Resources/Smote_score.png)
+![](/Resources/2_Smote_score.png)
 
 **Precision:** A high-risk application of 0.01 is predicted and is actually correct.
 
 **Recall:** 0.61 of the actual high-risk application was correctly identified. 
  
-![](/Resources/3_Smote_report.png)
+![](/Resources/2_Smote_report.png)
 
 ### Cluster Centroids Undersampling
 
@@ -58,13 +58,13 @@ Let's take a look at six different machine learning models that can predict a hi
 
 - Accuracy: 0.52 for high-risk applications was predicted and was actually correct. 
 
-![](/Resources/4_Cluster_score.png)
+![](/Resources/3_Cluster_score.png)
 
 **Precision:** A high-risk application of 0.01 is predicted and is actually correct.
 
 **Recall:** 0.61 of the actual high-risk application was correctly identified. 
 
-![](/Resources/4_Cluster_report.png)
+![](/Resources/3_Cluster_report.png)
 
 ### SMOTEENN Combination Sampling
 
@@ -76,13 +76,13 @@ Let's take a look at six different machine learning models that can predict a hi
 
 - Accuracy: Expected high risk use of 0.639, actually correct.
 
-![](/Resources/5_Smoteenn_report.png)
+![](/Resources/4_Smoteenn_report.png)
 
 **Precision:** A high-risk application of 0.01 is predicted and is actually correct.
 
 **Recall:** 0.70 of the actual high-risk application was correctly identified. 
 
-![](/Resources/6_Smoteenn_score.png)
+![](/Resources/4_Smoteenn_score.png)
 
 ### Random Forest Classifier
 
@@ -90,13 +90,13 @@ Let's take a look at six different machine learning models that can predict a hi
 
 - Accuracy: 0.78 of high risk applications were predicted and actually correct.
 
-![](/Resources/7_Balanced_score.png)
+![](/Resources/5_Balanced_score.png)
 
 **Precision:** A high-risk application of 0.03 is predicted and is actually correct.
 
 **Recall:** 0.70 of the actual high-risk application was correctly identified. 
 
-![](/Resources/8_Balanced_report.png)
+![](/Resources/5_Balanced_report.png)
 
 ### Easy Ensemble Classifier
 
@@ -104,13 +104,13 @@ Let's take a look at six different machine learning models that can predict a hi
 
 - Accuracy: 0.78 for high-risk use is expected and is actually correct.
 
-![](/Resources/9_Easy_score.png)
+![](/Resources/6_Easy_score.png)
 
 **Precision:** A high-risk application of 0.03 is predicted and is actually correct.
 
 **Recall:** 0.70 of the actual high-risk application was correctly identified.
 
-![](/Resources/10_Easy_report.png)
+![](/Resources/6_Easy_report.png)
 
 
 ## Summary
@@ -123,8 +123,11 @@ It's important to highlight that, as shown in the Classification Reports, its F1
 
 There is usually a trade-off between sensitivity and accuracy, and you need to strike a balance between them. A convenient way to think about  F1 scores is that if there is a significant imbalance between sensitivity and accuracy, the F1 score will be low. While 0.16 is low, it is up to 8 times more than other models. Therefore, from the above options, the most preferable is to anticipate high-risk loan applications.
 
+ #
 
+**Contact:**
+**E-mail:** mciano@hotmail.co.uk
 
+**LinkedIn:** https://www.linkedin.com/in/marciorciano/
 
-
-
+#
